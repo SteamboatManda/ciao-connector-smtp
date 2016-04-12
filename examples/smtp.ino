@@ -1,5 +1,7 @@
 /*
 Demostrates how to use SMTP Ciao Connector for Arduino Ciao Library.
+Reads temperature from analog pin every 30 seconds, if the temperature
+execeeds the treshold send an alert email. After 5 mins checks again.
 
 Parts required:
 - Arduino Yun / Tian

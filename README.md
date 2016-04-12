@@ -85,8 +85,8 @@ example configuration for gmail:
 
 ## How To Use
 Open [Arduino IDE](http://www.arduino.org/software), import
-Arduino Ciao Library in your sketch and take a look at the 
-[example](https://github.com/arduino-org/ciao-connector-smtp)
+Arduino Ciao Library in your sketch and take a look at the
+[example](https://github.com/arduino-org/ciao-connector-smtp/examples)
 
 ## See Also
 [Arduino Ciao](http://labs.arduino.org/Ciao)

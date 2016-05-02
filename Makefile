@@ -9,18 +9,19 @@ include $(TOPDIR)/rules.mk
 
 PKG_CONNECTOR:=smtp
 PKG_NAME:=ciao-connector-$(PKG_CONNECTOR)
-PKG_REVISION:=<HASH>
+PKG_REVISION:=70e9a15
 PKG_VERSION:=0.0.1
 PKG_RELEASE:=1
 PKG_INST_DIR:=/root/.ciao
 PKG_CONF_DIR:=/usr/lib/python2.7/ciao/conf
-PKG_REPO_NAME:=arduino-ciao-$(PKG_CONNECTOR)-connector
-PKG_REPO_USERNAME:=arduino-org
 
 PKG_SOURCE_PROTO:=git
+PKG_SOURCE_USERNAME:=arduino-org
+PKG_SOURCE_NAME:=arduino-ciao-$(PKG_CONNECTOR)-connector
+PKG_SOURCE_URL:=https://github.com/$(PKG_SOURCE_USERNAME)/$(PKG_SOURCE_NAME).git
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_REVISION).tar.gz
-PKG_SOURCE_URL:=https://github.com/$(PKG_REPO_USERNAME)/$(PKG_REPO_NAME).git
+
 PKG_SOURCE_VERSION:=$(PKG_REVISION)
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_REVISION)
 

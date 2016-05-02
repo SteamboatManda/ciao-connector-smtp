@@ -1,4 +1,6 @@
 /*
+Send Email
+
 Demostrates how to use SMTP Ciao Connector for Arduino Ciao Library.
 Reads temperature from analog pin every 30 seconds, if the temperature
 execeeds the treshold send an alert email. After 5 mins checks again.
@@ -7,8 +9,9 @@ Parts required:
 - Arduino Yun / Tian
 - TMP36 temperature sensor
 
-Created 12 Apr 2016
-  by Sergio Tomasello
+authors:
+created 12 Apr 2016 - sergio tomasello
+
 */
 
 #include <Ciao.h>
@@ -18,7 +21,7 @@ const int sensorPin = A0;
 // treshold temperature in Celcius
 const float tresholdTemp = 20.0;
 // Receveiver subject and body used for send emails
-String emailTo = "YOUR EMAIL ADDRESS";//<-- SET HERE THE EMAIL ADDRESS OF THE RECEIVER
+String emailTo = "RECEIVER EMAIL ADDRESS";//<-- SET HERE THE EMAIL ADDRESS OF THE RECEIVER
 String emailSubject = "Temp. Alert";
 String emailBody = "The Room Temperature is: ";
 

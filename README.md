@@ -7,7 +7,7 @@ Open a `secure shell` to your board and login into **Linino OS**.
 Install it via `opkg` running this commands:
 ```
 $ opkg update
-$ opkg install ciao-connector-smpt
+$ opkg install ciao-connector-smtp
 ```
 
 ### Arduino OS

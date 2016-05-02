@@ -6,7 +6,7 @@ SMTP Connector for Arduino Ciao - Send email directly from your sketch
 Open a `secure shell` to your board and login into **Linino OS**.
 Install it via `opkg` running this commands:
 ```
-$ opkg upgrade
+$ opkg update
 $ opkg install ciao-connector-smpt
 ```
 

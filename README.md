@@ -21,14 +21,14 @@ Download the zip file of the latest [release](https://github.com/arduino-org/cia
 unzip and move it via `scp` inside you board in the desired location.
 **Be sure to move `smtp.conf.json` file into the ciao directory**, eg:
 ```
-$ scp /Users/sergio/Downloads/ciao-connector-smtp/smtp.conf.json root@arduino.local:/usr/lib/python2.7/ciao/conf/
+$ scp /Users/sergio/Downloads/ciao-connector-smtp/smtp.ciao.conf.json root@arduino.local:/usr/lib/python2.7/ciao/conf/
 $ scp -r /Users/sergio/Downloads/ciao-connector-smtp/smtp root@arduino.local:/root/.ciao/
 ```
 
 ## Configuration
 
 ### Ciao Core Configuration
-Before start using the connector, set to `true` the `enabled` key.
+Before start using the connector, set to `true` the `enabled` key in the `smtp.ciao.json.file` file.
 Change the `commands/start` values only if you installed the connector manually.
 
 ```json
@@ -36,6 +36,7 @@ Change the `commands/start` values only if you installed the connector manually.
   "name" : "smtp",
   "enabled": false,
   "type" : "managed",
+	"core" : ">=0.1.0",
   "commands": {
           "start": ["/root/.ciao/smtp/smtp.py"],
           "stop": ["/usr/bin/killall","-s", "HUP","smtp.py"]

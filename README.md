@@ -19,10 +19,10 @@ and then search `ciao-connector-smpt`, select it an press *Install*
 ## Manually
 Download the zip file of the latest [release](https://github.com/arduino-org/ciao-connector-smtp/releases),
 unzip and move it via `scp` inside you board in the desired location.
-**Be sure to move `smtp.conf.json` file into the ciao directory**, eg:
+**Be sure to move `smtp.ciao.conf.json` file into the ciao directory**, eg:
 ```
-$ scp /Users/sergio/Downloads/ciao-connector-smtp/smtp.ciao.conf.json root@arduino.local:/usr/lib/python2.7/ciao/conf/
-$ scp -r /Users/sergio/Downloads/ciao-connector-smtp/smtp root@arduino.local:/root/.ciao/
+$ scp ~/Downloads/ciao-connector-smtp/smtp.ciao.conf.json root@arduino.local:/usr/lib/python2.7/ciao/conf/
+$ scp -r ~/Downloads/ciao-connector-smtp/smtp root@arduino.local:/root/.ciao/
 ```
 
 ## Configuration
